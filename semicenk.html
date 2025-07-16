@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)file:///C:/Users/amira/OneDrive/Desktop/frontend%20practice/semicenk.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Semicenk</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            background: linear-gradient(45deg, red 50%, aqua 50%);
+        }
+
+        .box {
+
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+
+        #img1 {
+            height: 300px;
+            width: 400px;
+            border: solid 1px black;
+            box-shadow: 3px 3px 6px;
+            cursor: pointer;
+        }
+
+        #img2 {
+            height: 300px;
+            width: 400px;
+            border: solid 1px black;
+            box-shadow: 3px 3px 6px;
+            cursor: pointer;
+        }
+
+        h2 {
+            justify-content: Center;
+            padding: 10px 20px;
+            font-size: 25px;
+        }
+
+        h3 {
+            color: brown;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 25px;
+        }
+
+        .box2 {
+
+            justify-content: space-between;
+            background: linear-gradient(-45deg, lightcoral, lightblue);
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <h1>Choose one of them</h1>
+    <div class="container">
+        <div class="box">
+            <img src="./semicenk_files/OIP.nBrZcoV7Ts6_aNjWi978EAHaFE" alt="Semicenk" id="img1"
+                onclick="handleClick(this)">
+            <h2>Semicenk</h2>
+        </div>
+        <div class="box">
+            <img src="./semicenk_files/Behnam-Bani-Ghorse-Ghamar.jpg" alt="Behnam Bani" id="img2"
+                onclick="handleClick(this)">
+            \<h3>Behnam Bani</h3>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box2">
+            <h2> Semicenk's Songs</h2>
+            <p>
+                Sen Kaldın<br>
+                Yüzü Tanıdık Değil<br>
+                Kalbim Usandı<br>
+                Düşer Aklıma<br>
+                Al Sevgilim<br>
+                Herkes Gibisin<br>
+                Dayan<br>
+                Bozulmuş Kalbim<br>
+                Unutmak Öyle Kolay Mı Sandın<br>
+                Aşırı Doz<br>
+                Yana Yana<br>
+                Canın Sağ Olsun<br>
+                Geri Dönemedim<br>
+                Pişman Değilim<br>
+                Tanrım Reva Mı<br>
+                Mesafe<br>
+                Fark Ettim<br>
+                Batık Gemi<br>
+                Eyvah Neye Yarar<br>
+                İlkbaharım Kışa Döndü<br>
+                Şalteri Kapattım<br>
+                Tek Başıma<br>
+                Küle Dönmüşsün<br>
+                Geçiyor Zaman<br>
+                Onlar Anlamaz Halden<br>
+                Kader Sağ Olsun<br>
+                Gözlerinden Gözlerine<br>
+                Bulamazsın<br>
+                Kalpsiz
+            </p>
+
+        </div>
+        <div class="box2">
+            <h2>Behnam Babi's Songs</h2>
+            <p>
+                Setareh Mishi<br>
+                Khoshhalam (Live)<br>
+                Kojaye In Shahri (Live)<br>
+                Khastam (DJ SawMan &amp; DJ Joubin Mashup)<br>
+                Shabe Eshgh<br>
+                Bi Marefat<br>
+                Khastam (Live)<br>
+                Yara (Sag Band)<br>
+                Kojaye In Shahri<br>
+                Khastam<br>
+                Baroon<br>
+                Dota Dele Ashegh<br>
+                Zakhm Kari<br>
+                Rafti<br>
+                Khoshhalam<br>
+                Ghorse Ghamar 2<br>
+                Khabeto Didam<br>
+                In Eshgheh<br>
+                Faghat Boro<br>
+                Toyi Entekhabam<br>
+                Iran<br>
+                Del Nakan<br>
+                Akhmato Va Kon (Live)<br>
+                Hanooz Dooset Daram<br>
+                Che Bekhay Che Nakhay (DeeJay Ramin Remix)<br>
+                Mahe Asal<br>
+                Sad Sal<br>
+                Ghorse Ghamar<br>
+                Lahze Be Lahze<br>
+                Tavagho Nadaram<br>
+                Vay Dele Bighararam<br>
+                Che Bekhay Che Nakhay<br>
+                Akhmato Va Kon<br>
+                Basseme<br>
+                Hame Donyam<br>
+                Ashegham Karde<br>
+                Chi Begam<br>
+                Man Ye Divoonam<br>
+                Alagheye Khas<br>
+                Zibaye Bi Hamta<br>
+                Bikhial<br>
+                Fasle Asheghi<br>
+                Ey Kash<br>
+            </p>
+
+        </div>
+    </div>
+    <script>
+        function handleClick(element) {
+            if (element.id === "img1") {
+                Swal.fire({
+                    title: 'Semicenk 🎵',
+                    text: 'You clicked Semicenk!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool!',
+                    imageUrl:"https://tenor.com/view/peach-cat-goma-peach-and-goma-mocha-cat-peachy-cat-gif-14169702682837115169.gif",
+                    imageWidth:300,
+                });
+
+
+            } else {
+                Swal.fire({
+                    title: 'Oops! 😅',
+                    text: 'You clicked Behnam Bani... Loser alert! 🚫',
+                    icon: 'error',
+                    confirmButtonText: 'Go back to Semicenk 😎',
+                    imageUrl:"https://tenor.com/view/pengu-pudgy-penguin-pudgypenguins-l-gif-11719459957108215672.gif",
+                    imageWidth:300,
+
+                    });
+
+            }
+
+        }
+    </script>
+
+<h4>web creator: Amir Sorabi<br>
+sources used: sweetalert</h4>
+</body>
+
+</html>
